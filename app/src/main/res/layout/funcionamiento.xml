@@ -166,20 +166,19 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardGraph"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="#20FFFFFF"
             app:cardCornerRadius="16dp"
             app:cardElevation="0dp"
             app:layout_constraintTop_toBottomOf="@+id/labelStats">
 
-            <TextView
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Aqui van las Gráficas)"
-                android:textAlignment="center"
-                android:textColor="#CCFFFFFF" />
+                android:layout_margin="10dp" />
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -215,6 +214,7 @@
                     android:text="Detectamos mucho ruido anoche. Intenta usar tapones o cerrar la ventana para mejorar tu descanso."
                     android:textColor="#FFFFFF" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
