@@ -41,4 +41,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.airbnb.android:lottie:6.4.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
